@@ -1,9 +1,11 @@
 main:
-  - title: "Assignments"
-    url: /assignments/
-  - title: "Posts"
-    url: /posts/
-  - title: "Tags"
-    url: /tags/
+  - title: "Assignment 1"
+    url: /assignment1/
+  - title: "Assignment 2"
+    url: /assignment2/
+  - title: "Assignment 3"
+    url: /assignment3/
+  - title: "Assignment 4"
+    url: /assignment4/
   - title: "About"
     url: /about/
