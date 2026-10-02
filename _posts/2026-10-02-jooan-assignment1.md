@@ -124,3 +124,5 @@ I began this project expecting GeoNames to confirm what I already knew: that Kor
 ## Generative AI Statement
 
 I used Claude for the necessary part of this assignment. It helped me troubleshoot errors on GitHub pages, and suggested console commands for counting and summarizing rows. It helped me brainstorm when it comes to narrowing down the feature codes of my interest. The observations, interpretations, local knowledge (such as the Goyang and Jirisan cases), and the final choice of feature codes are my own.
+
+**READY FOR GRADING**
