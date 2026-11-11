@@ -12,7 +12,7 @@ tags:
 
 ## Introduction
 
-Before I opened the map, I thought I knew how the ranking would turn out. The manual annotations that my classmate Nahla and I made in Recogito would be the most accurate, and of the two automated methods, the LLM would beat spaCy, because spaCy reads words exactly as they are written while an LLM can, at least in principle, read context.
+Before I opened the map, I thought I knew how the ranking would turn out. The manual annotations that my classmate and I made in Recogito would be the most accurate, and of the two automated methods, the LLM would beat spaCy, because spaCy reads words exactly as they are written while an LLM can, at least in principle, read context.
 
 The map did not agree with me. When I zoomed out, the orange spaCy points and the pink LLM points were spread across the United States, Europe, and even Japan and Korea, for a novel whose road never leaves the stretch between New York and New Orleans. About 27 percent of the mapped points in each automated layer fall outside the continental United States, and the LLM did no better than spaCy.
 
@@ -28,7 +28,7 @@ Those lines come from the Foursquare API. Kenric McDowell explains in his introd
 
 ### Manual annotation in Recogito
 
-Our assigned section was **Section 7**, the last leg of the trip along the Mississippi Gulf Coast, from Biloxi to New Orleans. I read the section and identified the words that referred to places, and Nahla researched each one and entered it in Recogito, either by linking it to a gazetteer entry or, when there was no match, by typing coordinates into the comment field.
+Our assigned section was **Section 7**, the last leg of the trip along the Mississippi Gulf Coast, from Biloxi to New Orleans. I read the section and identified the words that referred to places, and my classmate (Nahla) researched each one and entered it in Recogito, either by linking it to a gazetteer entry or, when there was no match, by typing coordinates into the comment field.
 
 <img src="{{ '/assets/images/a2_recogito_section7.png' | relative_url }}" style="zoom:50%;" />
 
@@ -60,7 +60,7 @@ I relabelled the "School" rows rather than deleting them because the stadium rea
 
 | Layer | Who picked the place names | Who found the coordinates | Rows | Mapped | No coordinates |
 |---|---|---|---|---|---|
-| Manual (Recogito), Section 7 | Nahla and I | Gazetteer or research by hand | 27 | 26 | 1 |
+| Manual (Recogito), Section 7 | my classmate and I | Gazetteer or research by hand | 27 | 26 | 1 |
 | spaCy + geopy, pp. 41 to 140 | spaCy NER plus pattern rules | Nominatim (OpenStreetMap) | 341 | 248 | 93 |
 | LLM, pp. 41 to 140 | An LLM, while transcribing the scans | Nominatim (OpenStreetMap) | 374 | 281 | 93 |
 
@@ -115,7 +115,7 @@ The LLM's real advantage was in recognition. At Bay Saint Louis, the manual and 
 
 ### We read the route, not the name
 
-Unlike Assignment 1, I had no local knowledge here; I had never heard of Biloxi or Gulfport. What Nahla and I had was the story, read in order. The car does not teleport, so the next place must be near the last one. When the stadium has "a window on the Town Hall below," the town hall is Biloxi's, not Spain's. "Loraine: a neighborhood in Gulfport" is not Loraine, Illinois. "Biloxie," right after the stadium, is Biloxi with a typo.
+Unlike Assignment 1, I had no local knowledge here; I had never heard of Biloxi or Gulfport. What my classmate and I had was the story, read in order. The car does not teleport, so the next place must be near the last one. When the stadium has "a window on the Town Hall below," the town hall is Biloxi's, not Spain's. "Loraine: a neighborhood in Gulfport" is not Loraine, Illinois. "Biloxie," right after the stadium, is Biloxi with a typo.
 
 The distances between our points and the LLM's show the two ways of reading. The gap is either almost nothing (Gulfport 0 km, Bay Saint Louis 0.3 km) or enormous (Loraine 1,102 km, Biloxie 2,801 km, Town Hall 7,528 km), with little in between. When the machines are right they are precise; when they are wrong they are on another continent, because each name is searched alone, without the route.
 
@@ -137,11 +137,11 @@ Finally, the map shows only what survived editing. McDowell writes that the proj
 
 ## Conclusion
 
-I began this project expecting a simple ranking, with humans on top and the LLM ahead of spaCy. Instead, what separates the methods is not intelligence but context. Nahla and I placed names by following the route, reading through typos, and deciding when a place did not exist. The machines placed each name alone, assuming one correct location somewhere in the world, and repeated their mistakes with perfect consistency. Humans were wrong too, most clearly when we trusted the tool instead of the story. From now on, when I see a map produced automatically from text, I will ask not only whether the points are right, but what the method assumed about where the text could be.
+I began this project expecting a simple ranking, with humans on top and the LLM ahead of spaCy. Instead, what separates the methods is not intelligence but context. My classmate and I placed names by following the route, reading through typos, and deciding when a place did not exist. The machines placed each name alone, assuming one correct location somewhere in the world, and repeated their mistakes with perfect consistency. Humans were wrong too, most clearly when we trusted the tool instead of the story. From now on, when I see a map produced automatically from text, I will ask not only whether the points are right, but what the method assumed about where the text could be.
 
 ## Division of Work
 
-I read Section 7 and identified the place names; my classmate Nahla researched and entered each place and its coordinates in Recogito. I downloaded and cleaned the data, built the map, and wrote this post.
+I read Section 7 and identified the place names; my classmate researched and entered each place and its coordinates in Recogito. I downloaded and cleaned the data, built the map, and wrote this post.
 
 ## References
 
