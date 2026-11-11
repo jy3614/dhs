@@ -1,5 +1,5 @@
 ---
-title: "Assignment 2: Reading the Route, Not the Name. Manual vs. Automated Geocoding of 1 the Road"
+title: "Assignment 2: Manual vs. Automated Geocoding of 1 the Road"
 permalink: /assignment2/
 last_modified_at: 2026-11-11T23:30:00+04:00
 tags:
